@@ -8,10 +8,11 @@ app = Flask(__name__)
 def index():
     return 'Hello World!'
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=9874)
-
 @app.route('/hello/')
-@app.route('/hello/<name>')
+@app.route('/hello/<name_data>')
 def hello_there(name_data=None):
     return render_template('hello_there.html', name=name_data)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+    
