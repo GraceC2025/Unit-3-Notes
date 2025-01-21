@@ -1,0 +1,13 @@
+body {
+    background: rgb(75, 124, 209);
+    font-family: poppins;
+}
+h1{
+    color: aquamarine;
+}
+#fun-container{
+    background-color: lavender;
+}
+.fun-text{
+    color: hotpink;
+}
