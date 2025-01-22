@@ -1,13 +1,40 @@
 body {
-    background: rgb(75, 124, 209);
+    background: lavender;
     font-family: poppins;
 }
 h1{
-    color: aquamarine;
+    color: rgb(56, 106, 231);
 }
 #fun-container{
-    background-color: lavender;
+    background-color: lightpink;
 }
 .fun-text{
     color: hotpink;
+}
+.navbar {
+    background-color: lightslategray;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 8px 5px 8px 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-brand {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.navbar-item {
+    font-variant: small-caps;
+    margin-left: 30px;
+}
+
+.body-content {
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
