@@ -8,10 +8,17 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
- # New functions
+ # new functions
 @app.route('/about/')
 def about():
-     return render_template("about.html")
+    # declare variable 
+     current_mood = "mid"
+     friends_list = ['Eliza', 'Courtney', 'Lucian', 'Alex', 'Abby', 'Sohan', 'Grace']
+     definitions = {'platypus':'a blue-green creature that is very good at solving mysteries', 'ladybug':'an apex predator with magical properties','giraffe':'long neck animal with purple tounge'}
+     
+     # pass variable into rendered template
+     return render_template("about.html", mood = current_mood, friends = friends_list, my_dict=definitions)
+ 
 
 @app.route('/contact/')
 def contact():

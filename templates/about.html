@@ -3,5 +3,31 @@
 About
 {% endblock %}
 {% block content %}
-<p>About</p>
+<h2>My About Page</h2>
+
+{% if mood  == "good" %}
+    <p>Hi bff!! I'm soooo happy you're here!</p>
+
+{% elif mood == "bad" %}
+    <p> Not feeling it today.</p>
+
+{% else %}
+    <p>Waddup. Feeling super mysterious...</p>
+{% endif %}
+
+<h3>Best Class Ever!</h3>
+<ul>
+    {% for friend in friends %}
+        <li>{{ friend }}</li>
+    {% endfor %}
+</ul>
+
+<dl>
+    {% for key, value in my_dict.items() %}
+        <dt>{{ key }}</dt>
+        <dd>{{value}}</dd>
+    {% endfor %}
+</dl>
+
 {% endblock %}
+
